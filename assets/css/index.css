@@ -1,0 +1,82 @@
+body {
+    background: url(../img/bg.gif);
+    margin: 0;
+    padding: 0;
+}
+
+.filter {
+    width: 100%;
+    opacity: 0.7;
+    height: 100vh;
+    z-index: -9999;
+    position: absolute;
+    background-color: black;
+}
+
+.slot-machine {
+    overflow: hidden;
+    padding-top: 20%;
+    z-index: 9999;
+}
+
+#left-reel,
+#middle-reel,
+#right-reel {
+    background: url(../img/reel.png);
+    height: 363px;
+    background-repeat: repeat-y;
+    background-position-x: center;
+}
+
+
+/* win conditions */
+
+table,
+h2 {
+    color: white;
+}
+
+
+/* Panel css */
+
+.panel {
+    margin-top: 40px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: darkslategray;
+}
+
+.panel #currentCredit,
+h4 {
+    color: orange;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.panel #currentCredit {
+    font-size: 20px;
+}
+
+.panel .credit {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.panel .credit button {
+    background-color: green;
+    color: orange;
+    width: 100px;
+    border: none;
+    height: 32px;
+    border-radius: 10px;
+}
+
+.panel #spin {
+    width: 50px;
+    border: none;
+    height: 50px;
+    float: right;
+    color: orange;
+    border-radius: 50%;
+    background-color: darkred;
+}
